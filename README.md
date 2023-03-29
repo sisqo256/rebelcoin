@@ -15,6 +15,8 @@ Specifications:
 
 • Prefix: RBL adresses start with "R"  
 
+• Transaction per second (TPS): 1,333  
+
 • Uses the "RebelcoinDifficulty" (RBLD) difficulty algorithm for a more stable POW mining on the network
 
 
