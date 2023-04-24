@@ -33,6 +33,7 @@ Links:
 
 • [Mining Pool](https://pool.rebelcoin.io)
 
+• [Web Wallet](https://rebelwallet.io)
 
 
 ---
