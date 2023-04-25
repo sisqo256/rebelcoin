@@ -1,4 +1,5 @@
-﻿![](share/pixmaps/github_1024.png)
+<img width="1100" src="share/pixmaps/github_1024.png">
+
 
 
 Specifications:
