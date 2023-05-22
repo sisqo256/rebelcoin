@@ -36,7 +36,7 @@ Links:
 
 • [Web Wallet](https://rebelwallet.io)
 
-
+• [Telegram](http://t.me/realrebelcoins)
 ---
 
 
