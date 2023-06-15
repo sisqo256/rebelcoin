@@ -12,11 +12,11 @@
 #include <util.h>
 
 
-unsigned int static RebelcoinDifficulty(const CBlockIndex* pindexLast, const Consensus::Params& params); 
+unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consensus::Params& params); 
 
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params& params)
 {
-    return RebelcoinDifficulty(pindexLast,params);
+    return DarkGravityWave(pindexLast,params);
     unsigned int nProofOfWorkLimit = UintToArith256(params.powLimit).GetCompact();
 
     if (pindexLast == NULL)
@@ -100,7 +100,8 @@ bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params&
     return true;
 }
 
-unsigned int static RebelcoinDifficulty(const CBlockIndex* pindexLast, const Consensus::Params& params) {
+unsigned int static DarkGravityWave(const CBlockIndex* pindexLast, const Consensus::Params& params) {
+    /* current difficulty formula, dash - DarkGravity v3, written by Evan Duffield - evan@dash.org */
     const arith_uint256 bnPowLimit = UintToArith256(params.powLimit);
     int64_t nPastBlocks = 24;
     if (!pindexLast || pindexLast->nHeight <= nPastBlocks) {
