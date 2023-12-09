@@ -1,4 +1,4 @@
-<img width="1100" src="share/pixmaps/github_1024.png">
+﻿<img width="1100" src="share/pixmaps/github_1024.png">
 
 
 
@@ -18,6 +18,7 @@ Specifications:
 
 • Transaction per second (TPS): 1,333  
 
+• Uses DarkGravityWave V3
 
 ---
 
@@ -37,6 +38,13 @@ Links:
 • [Web Wallet](https://rebelwallet.io)
 
 • [Telegram](http://t.me/realrebelcoins)
+
+• [Discord](https://discord.gg/U2V8SjRkTy)
+
+• [Twitter](https://twitter.com/@realrebelcoin)
+
+• Market Xeggex [USDT](https://xeggex.com/market/RBL_USDT) [BTC](https://xeggex.com/market/RBL_BTC)
+
 
 
 

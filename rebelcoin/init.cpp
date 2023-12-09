@@ -558,11 +558,14 @@ void SetupServerArgs()
 
 std::string LicenseInfo()
 {
-    const std::string URL_EXPLORER= "<https://explorer.rebelcoin.io>";
     const std::string URL_WEBSITE = "<https://rebelcoin.io>";
+    const std::string URL_EXPLORER = "<https://explorer.rebelcoin.io>";
     const std::string URL_MININGPOOL = "<https://pool.rebelcoin.io>";
-    const std::string URL_WEBWALLET = "<https://myrebelcoin.com>";
-    const std::string URL_TELEGRAM = "<https://t.me/>";
+    const std::string URL_WEBWALLET = "<https://rebelwallet.io>";
+    const std::string URL_TELEGRAM = "<https://t.me/realrebelcoins>";
+    const std::string URL_DISCORD = "<https://discord.gg/U2V8SjRkTy>";
+    const std::string URL_TWITTER = "<https://twitter.com/@realrebelcoin>";
+    const std::string URL_GITHUB = "<https://github.com/Rebelcoin-Blockchain/Rebelcoin>"; 
 
        return     "\n" +
            strprintf(_("Official website %s").translated,
@@ -577,10 +580,27 @@ std::string LicenseInfo()
                URL_MININGPOOL) +
            "\n" +
            "\n" +
-   //        strprintf(_("Web wallet: %s").translated,
-   //            URL_WEBWALLET) +
-   //        "\n" +
-   //        "\n" +
+           strprintf(_("Web wallet: %s").translated,
+               URL_WEBWALLET) +
+           "\n" +
+           "\n" +
+           strprintf(_("Telegram: %s").translated,
+               URL_TELEGRAM) +
+           "\n" +
+           "\n" +
+           strprintf(_("Discord: %s").translated,
+               URL_DISCORD) +
+           "\n" +
+           "\n" +
+           strprintf(_("Twitter: %s").translated,
+               URL_TWITTER) +
+           "\n" +
+           "\n" +
+           strprintf(_("Github: %s").translated,
+               URL_GITHUB) +
+           "\n" +
+           "\n" +
+
            "\n";
 }
 
@@ -1278,6 +1298,10 @@ bool AppInitMain(InitInterfaces& interfaces)
                                     "addnode=seed02.rebelcoin.io\n"
                                     "addnode=seed03.rebelcoin.io\n"
                                     "addnode=seed04.rebelcoin.io\n"
+                                    "addnode=seed05.rebelcoin.io\n"
+                                    "addnode=seed06.rebelcoin.io\n"
+                                    "addnode=seed07.rebelcoin.io\n"
+                                    "addnode=seed08.rebelcoin.io\n"
                                     "\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);

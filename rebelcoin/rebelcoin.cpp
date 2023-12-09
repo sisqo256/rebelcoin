@@ -10,7 +10,7 @@
 
 
 // Copyright (c) 2010 Satoshi Nakamoto
-// Rebelcoin Developers - TylerAnderson T.A
+// Rebelcoin Developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -119,8 +119,8 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nStartTime = 1199145601;
         consensus.vDeployments[Consensus::DEPLOYMENT_TESTDUMMY].nTimeout = 1230767999;
 
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000000100010");
-        consensus.defaultAssumeValid = uint256S("0x0000000081b58599cbb570ad943f068ee2c5a1754f52cf0f69b0b6a5c713be04");
+        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000602f7c5a8bf31d5def6");
+        consensus.defaultAssumeValid = uint256S("0x000000000000003b173c56f661872da7b7b21f3718146bd0dd5b5e7166ef29a0");
 
         pchMessageStart[0] = 0xa9;
         pchMessageStart[1] = 0xa9;
@@ -141,6 +141,10 @@ public:
         vSeeds.emplace_back("seed02.rebelcoin.io");
         vSeeds.emplace_back("seed03.rebelcoin.io");
         vSeeds.emplace_back("seed04.rebelcoin.io");
+        vSeeds.emplace_back("seed05.rebelcoin.io");
+        vSeeds.emplace_back("seed06.rebelcoin.io");
+        vSeeds.emplace_back("seed07.rebelcoin.io");
+        vSeeds.emplace_back("seed08.rebelcoin.io");
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,60);
@@ -165,10 +169,22 @@ public:
                 { 101, uint256S("0x000058b0fde93e973ad978a26644bf3a2e9bcd154408dbefded8dc1f0f73b2d4")},
                 { 112, uint256S("0x00001f63d96adf05e7ea03e4141e857dfea25dfeeb0a3711ea5b61d40f75a3b8")},
                 { 126, uint256S("0x00000ccc5cb547cbc333e65ac0be41a95d071666d37e817bbe8c20d9f3ff0f9e")},
+                { 630, uint256S("0x000000000823f40357e1dae5d6e2a201801421f1501b54657409a891ee3020ab")},
+                { 1522, uint256S("0x00000000000002d09c0a17cdc0de90f886f8119f720a4ec1f06370c9e0c9a2c1")},
+                { 3924, uint256S("0x000000000000026e47f4c48c84c980634f8013b2e3ff1cb035dbfac573afa241")},
+                { 7789, uint256S("0x000000000000001e2a499fda6ef52143a3041661de4c6744b1d7dd5bcc304cc6")},
+                { 8146, uint256S("0x0000000000000070803fcfe670e2224b6df374f8bbdca25b61dcb6fa888382aa")},
+                { 78834, uint256S("0x000000000000006622c9199aedf131090cd4d6aa4bbb59ba02d6b0e94300a28c")},
+                { 82334, uint256S("0x000000000000001cd4401ae4b98bda2b063bd98918ab70433779b94266c7fdbd")},
+                { 127411, uint256S("0x000000000000008baf73399f5bcce0d5dfa127ca9e962d3dabd13421ef4e6223")},
+                { 290067, uint256S("0x0000000000000031a2addebe9c46feb5fd6689f9a35bbb9ceb0b3c945847302e")},
+                { 292284, uint256S("0x0000000000000000821fc5f23631cfcc7bc8e2b7ed876fde7a71cb2edcb0f7b8")},
+                { 529636, uint256S("0x0000000000000024868f05ddf045e4993b7630cb80f72bf40f37f8c48e4209e4")},
+                { 543243, uint256S("0x000000000000003b173c56f661872da7b7b21f3718146bd0dd5b5e7166ef29a0")},
             }
         };
 
-        chainTxData = ChainTxData{ 1679947972, 128, 0.79012345};
+        chainTxData = ChainTxData{ 1702071088, 614850, 0.02779183};
     }
 };
 

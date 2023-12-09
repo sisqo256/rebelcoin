@@ -63,7 +63,7 @@ HelpMessageDialog::HelpMessageDialog(interfaces::Node& node, QWidget *parent, bo
         ui->aboutMessage->setTextFormat(Qt::RichText);
         ui->scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
         text = version + "\n" + QString::fromStdString(FormatParagraph(licenseInfo));
-        ui->aboutMessage->setText(tr("Rebelcoin Developers ") + tr("2023 ") + tr("- TylerAnderson T.A") + "<br><br>" + version + "<br><br><br>" + licenseInfoHTML);
+        ui->aboutMessage->setText(tr("Rebelcoin Developers ") + tr("2023-2024 ") + "<br><br>" + version + "<br><br><br>" + licenseInfoHTML);
         ui->aboutMessage->setWordWrap(true);
         ui->helpMessage->setVisible(false);
     } else {
